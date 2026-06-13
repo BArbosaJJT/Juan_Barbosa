@@ -3,79 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Barbosa</title>
+    <title>Hoja de Vida - Creador de bkrwn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            color: #3498db;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Bienvenido a la página de Juan Barbosa</h1>
-        <p>Conoce más sobre mí</p>
-    </header>
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Hola, soy Juan Barbosa. Me encanta aprender nuevas habilidades, y en este sitio podrás conocer un poco más sobre mis intereses y proyectos.</p>
-    </section>
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <p>Actualmente, estoy trabajando en un simulador de trading y aprendiendo sobre la tecnología y el trading financiero.</p>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Si quieres contactarme, puedes enviarme un correo a <a href="mailto:juan.barbosa@email.com">juan.barbosa@email.com</a>.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Juan Barbosa. Todos los derechos reservados.</p>
-    </footer>
-    <script>
-        // Si quieres agregar alguna funcionalidad interactiva, puedes hacerlo aquí.
-        console.log("¡Bienvenido a la página de Juan Barbosa!");
-    </script>
+<body class="text-slate-800 antialiased min-h-screen p-4 md:p-8 flex justify-center">
+
+    <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Sidebar Izquierda -->
+        <div class="md:col-span-1 space-y-6">
+            
+            <!-- Perfil Encabezado -->
+            <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-100 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-20"></div>
+                <div class="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-4 border-4 border-white shadow-md flex items-center justify-center text-slate-400 text-4xl relative z-10 overflow-hidden">
+                    <img src="WhatsApp Image 2026-06-12 at 11.09.32 PM.jpeg" alt="Juan Barbosa" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-bold text-slate-800 relative z-10">Juan Barbosa</h1>
+                <h2 class="text-indigo-600 font-semibold mb-2 relative z-10">Estudiante & Creador de Proyectos</h2>
+                <p class="text-sm text-slate-500 mb-4 relative z-10"><i class="fa-solid fa-location-dot mr-1"></i> Bogotá, Colombia</p>
+                
+                <div class="flex justify-center gap-3 relative z-10">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-indigo-100 hover:text-indigo-600 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-indigo-100 hover:text-indigo-600 transition"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-indigo-100 hover:text-indigo-600 transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Skills Gamificados -->
+            <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-100">
+                <h3 class="text-lg font-bold mb-4 border-b pb-2 flex items-center gap-2"><i class="fa-solid fa-bolt text-yellow-400"></i> Habilidades Base</h3>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-1"><span>Liderazgo (Emprendedor)</span> <span>Nivel 5</span></div>
+                        <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-indigo-500 h-2 rounded-full" style="width: 95%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-1"><span>Creatividad (Artístico)</span> <span>Nivel 5</span></div>
+                        <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-pink-500 h-2 rounded-full" style="width: 95%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-1"><span>Empatía (Social)</span> <span>Nivel 5</span></div>
+                        <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Personalidad -->
+                <h3 class="text-lg font-bold mt-6 mb-3 border-b pb-2 flex items-center gap-2"><i class="fa-solid fa-puzzle-piece text-purple-500"></i> Personalidad</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                    Dinámico, creativo y orientado a las personas. Me gusta tomar la iniciativa para crear soluciones diferentes y tengo gran facilidad para trabajar en equipo y comunicarme.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-lg border border-purple-100">Creativo</span>
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-lg border border-purple-100">Sociable</span>
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-lg border border-purple-100">Proactivo</span>
+                </div>
+
+                <!-- Deportes -->
+                <h3 class="text-lg font-bold mt-6 mb-3 border-b pb-2 flex items-center gap-2"><i class="fa-solid fa-medal text-orange-400"></i> Deportes</h3>
+                <p class="text-sm text-slate-600 mb-2">El deporte me ha enseñado disciplina, resiliencia y la importancia del trabajo en equipo.</p>
+                <div class="flex flex-wrap gap-2">
+                    <!-- Edita estos deportes según los que practiques -->
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-lg border border-orange-100"><i class="fa-solid fa-futbol mr-1"></i> Fútbol</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-lg border border-orange-100"><i class="fa-solid fa-running mr-1"></i> Atletismo</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-lg border border-orange-100">Trabajo en Equipo</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="md:col-span-2 space-y-6">
+            
+            <!-- Sobre mi -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
+                <h2 class="text-2xl font-bold mb-4 gradient-text">Mi Misión</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Soy un estudiante apasionado por transformar la educación a través de la tecnología y el juego. Actualmente, mientras curso mi bachillerato, dedico mi tiempo libre a desarrollar herramientas que hagan que el aprendizaje sea una aventura atractiva. Combino mis habilidades creativas, sociales y de liderazgo para construir proyectos que tengan un impacto positivo en los demás.
+                </p>
+            </div>
+
+            <!-- Experiencia / Proyecto Principal -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-slate-100 relative overflow-hidden">
+                <!-- Decoración de fondo -->
+                <div class="absolute -right-10 -top-10 text-9xl text-indigo-50 opacity-50 pointer-events-none"><i class="fa-solid fa-gamepad"></i></div>
+                
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 relative z-10"><i class="fa-solid fa-rocket text-indigo-500"></i> Proyecto en Desarrollo</h2>
+                
+                <div class="relative z-10 border-l-2 border-indigo-200 pl-6 pb-2">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_white]"></div>
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">Creador y Desarrollador de <span class="text-indigo-600">bkrwn</span></h3>
+                            <p class="text-slate-500 font-medium">Plataforma Gamificada de E-learning</p>
+                        </div>
+                        <span class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-bold rounded-full"><i class="fa-solid fa-person-digging mr-1"></i> En Progreso</span>
+                    </div>
+                    
+                    <p class="text-slate-600 mb-4 mt-3">
+                        bkrwn es una idea en desarrollo para crear una innovadora plataforma educativa que utilice dinámicas de juego para aumentar la motivación de los estudiantes. Como creador del proyecto, actualmente estoy trabajando en:
+                    </p>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li><strong>Diseño y Conceptualización:</strong> Pensando las mecánicas de juego y la identidad visual de la plataforma.</li>
+                        <li><strong>Planificación:</strong> Estructurando cómo funcionará el sistema de recompensas y las rutas de aprendizaje.</li>
+                        <li><strong>Liderazgo:</strong> Impulsando la idea desde cero con iniciativa emprendedora, aprendiendo las herramientas necesarias en el camino.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Educación -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-indigo-500"></i> Formación Académica</h2>
+                
+                <div class="space-y-6">
+                    <!-- Bachillerato -->
+                    <div class="border-l-2 border-indigo-200 pl-6 relative">
+                        <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_white]"></div>
+                        <div class="flex justify-between items-start flex-wrap gap-2">
+                            <h3 class="text-lg font-bold text-slate-800">Bachillerato</h3>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">En estudio</span>
+                        </div>
+                        <p class="text-slate-500 font-medium">Colegio Fundación Colombia</p>
+                        <p class="text-sm text-slate-400">2026 - Presente</p>
+                    </div>
+
+                    <!-- Educación Básica -->
+                    <div class="border-l-2 border-slate-200 pl-6 relative">
+                        <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_white]"></div>
+                        <h3 class="text-lg font-bold text-slate-800">Educación Básica</h3>
+                        <p class="text-slate-500 font-medium">Colegio Fundación Colombia</p>
+                        <p class="text-sm text-slate-400">Finalizado en 2025</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
